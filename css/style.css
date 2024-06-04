@@ -1,0 +1,124 @@
+*, body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:"Kanit", sans-serif;
+}
+
+body {
+    background-color:aliceblue;
+    padding: 20px;
+    margin: 0px;
+}
+
+#taskInput {
+    display: flex;
+    flex-direction: column;
+    background-color:azure;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inputBlock {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack label on top of input */
+}
+
+.inputBlock label {
+    margin-bottom: 5px; /* Add space between label and input */
+}
+
+#taskInput input {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    font-size: 14px; /* Adjust font size for consistency */
+    width: auto;
+}
+
+#taskInput button {
+    margin-top: 10px;
+    align-self: flex-start; /* Align button to the bottom */
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size */
+    font-weight: 700;
+}
+#taskInput button:hover {
+    background-color: #004896;
+}
+
+/* TODO(Alif): button on click styling */
+
+#taskListContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskList {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.taskItem {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.taskItem .taskName {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.taskItem .taskDateTime {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.taskItem button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.taskNameDate {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align:center;
+}
+
+h2 {
+    font-weight:300;
+    font-size:15px;
+}
